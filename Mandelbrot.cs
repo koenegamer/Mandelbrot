@@ -5,18 +5,18 @@ using System.Windows.Forms;
 
 Form scherm = new Form();
 scherm.Text = "Mandelbrot";
-int ScreenWidth = 300;
-int ScreenHeight = 300;
+int ScreenWidth = 400;
+int ScreenHeight = 400;
 scherm.ClientSize = new Size(ScreenWidth, ScreenHeight);
-Bitmap Mandelbrot = new Bitmap(ScreenWidth, ScreenHeight);
+
 Label lab = new Label();
 scherm.Controls.Add(lab);
 lab.Size = new Size(ScreenWidth, ScreenHeight);
-Graphics g = Graphics.FromImage(Mandelbrot);
-lab.Image = Mandelbrot;
 
+double CenterX = 0;
+double CenterY = 0;
 double scale = 100;
-int FMax = 100;
+int FMax = 1000;
 
 int CalculateMandelgetal(double x, double y, double a, double b)
 {
@@ -35,16 +35,17 @@ int CalculateMandelgetal(double x, double y, double a, double b)
         a = MandelA;
         b = MandelB;
     }
-    return 1;
+    return 0;
 }
 
 void CreateBitmap()
 {
+    Bitmap Mandelbrot = new Bitmap(ScreenWidth, ScreenHeight);
     for (int i = 0; i < ScreenHeight; i++)
     {
         for (int j = 0; j < ScreenWidth; j++)
         {
-            double Mandelgetal = CalculateMandelgetal((i/scale) - (ScreenWidth/2/scale), (j/scale) - (ScreenHeight/2/scale), (i / scale) - (ScreenWidth / 2 / scale), (j / scale) - (ScreenHeight / 2 / scale));
+            double Mandelgetal = CalculateMandelgetal((i/scale) - (ScreenWidth/2/scale) + CenterX, (j/scale) - (ScreenHeight/2/scale) + CenterY, (i / scale) - (ScreenWidth / 2 / scale) + CenterX, (j / scale) - (ScreenHeight / 2 / scale) + CenterY);
             if (Mandelgetal % 2 == 0)
             {
                 Mandelbrot.SetPixel(i, j, Color.Black);
@@ -55,8 +56,28 @@ void CreateBitmap()
             }
         }
     }
+    lab.Image = Mandelbrot;
+}
+
+void Zoom(object o, MouseEventArgs e)
+{
+    Debug.WriteLine("CLick");
+    int MouseX = e.X;
+    int MouseY = e.Y;
+    CenterX += (MouseX - ScreenWidth / 2) / scale;
+    CenterY += (MouseY - ScreenHeight / 2) / scale;
+    if (e.Button == MouseButtons.Left)
+    {
+        scale = scale * 2;
+    }
+    else if (e.Button == MouseButtons.Right)
+    {
+        scale = scale / 2;  
+    }
+    CreateBitmap();
 }
 
 CreateBitmap();
+lab.MouseClick += Zoom;
 
 Application.Run(scherm);
