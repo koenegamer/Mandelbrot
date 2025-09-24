@@ -38,6 +38,7 @@ int CalculateMandelgetal(double x, double y, double a, double b)
     return 0;
 }
 
+
 void CreateBitmap()
 {
     Bitmap Mandelbrot = new Bitmap(ScreenWidth, ScreenHeight);
@@ -45,15 +46,24 @@ void CreateBitmap()
     {
         for (int j = 0; j < ScreenWidth; j++)
         {
-            double Mandelgetal = CalculateMandelgetal((i/scale) - (ScreenWidth/2/scale) + CenterX, (j/scale) - (ScreenHeight/2/scale) + CenterY, (i / scale) - (ScreenWidth / 2 / scale) + CenterX, (j / scale) - (ScreenHeight / 2 / scale) + CenterY);
-            if (Mandelgetal % 2 == 0)
+            int Mandelgetal = CalculateMandelgetal((i / scale) - (ScreenWidth / 2 / scale) + CenterX, (j / scale) - (ScreenHeight / 2 / scale) + CenterY, (i / scale) - (ScreenWidth / 2 / scale) + CenterX, (j / scale) - (ScreenHeight / 2 / scale) + CenterY);
+            if (Mandelgetal == 0)
             {
-                Mandelbrot.SetPixel(i, j, Color.Black);
+                Color zwart = Color.FromArgb(255, 0, 0, 0);
+                Mandelbrot.SetPixel(i, j, zwart);
+            }
+            else if (Mandelgetal % 2 == 0)
+            {
+                Color niet = Color.FromArgb(255, Mandelgetal % 255, 0, 255);
+                Mandelbrot.SetPixel(i, j, niet);
             }
             else if (Mandelgetal % 2 == 1)
             {
-                Mandelbrot.SetPixel(i, j, Color.White);
+                Color sd = Color.FromArgb(255, (Mandelgetal) % 255, 0, 255);
+                Mandelbrot.SetPixel(i, j, sd);
             }
+
+
         }
     }
     lab.Image = Mandelbrot;
@@ -72,7 +82,7 @@ void Zoom(object o, MouseEventArgs e)
     }
     else if (e.Button == MouseButtons.Right)
     {
-        scale = scale / 2;  
+        scale = scale / 2;
     }
     CreateBitmap();
 }
