@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Reversi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9f672eca699089c3844c0fa92abe6a2962798e63")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+59b195f133208852a67b1edcd18c1fd78bdea5ad")]
 [assembly: System.Reflection.AssemblyProductAttribute("Reversi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Reversi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

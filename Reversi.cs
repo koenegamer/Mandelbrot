@@ -21,19 +21,14 @@ Point point = new Point(50, ScreenHeight - ReversiHeight - 50);
 lab.Location = point;
 
 int AantalVakjes = 6;
-List<List<Steen>> Stenen = new List<List<Steen>>();
+List<Steen> Stenen = new List<Steen>();
 string Turn = "Rood";
 
 void InitiateStenen()
 {
-    for (int i = 0; i < AantalVakjes; i++)
+    for (int i = 0; i < AantalVakjes*AantalVakjes; i++)
     {
-        List<Steen> Lists = new List<Steen>(AantalVakjes);
-        for (int j = 0; j < AantalVakjes; j++)
-        {
-            Lists.Add(new Steen(i, j, ""));
-        }
-        Stenen.Add(Lists);
+        Stenen.Add(new Steen(i % AantalVakjes, (int)(i / AantalVakjes), ""));
     }
     SetSteen(2, 2, "Rood");
     SetSteen(3, 2, "Blauw");
@@ -43,18 +38,15 @@ void InitiateStenen()
 
 void SetSteen(int x, int y, string kleur)
 {
-    foreach (List<Steen> list in Stenen)
+    foreach (Steen steen in Stenen)
     {
-        foreach (Steen steen in list)
+        if (steen.x == x && steen.y == y)
         {
-            if (steen.x == x && steen.y == y)
-            {
-                steen.Kleur = kleur;
-            }
+            steen.Kleur = kleur;
         }
     }
 }
-
+/*
 void Check(int x, int y)
 {
     foreach (List<Steen> list in Stenen)
@@ -85,11 +77,15 @@ void Check(int x, int y)
                 {
                     continue;
                 }
+                else if (dx == dy || dx == -dy)
+                {
+                    continue;
+                }
             }
         }
     }
 }
-
+*/
 void Draw(Object o, PaintEventArgs pea)
 {
     Graphics g = pea.Graphics;
@@ -102,26 +98,23 @@ void Draw(Object o, PaintEventArgs pea)
     {
         g.DrawLine(Pens.Black, (ReversiWidth * i) / AantalVakjes, 0, (ReversiWidth * i) / AantalVakjes, ReversiHeight);
     }
-    foreach (List<Steen> list in Stenen)
+    foreach (Steen steen in Stenen)
     {
-        foreach (Steen steen in list)
+        Color kleur;
+        if (steen.Kleur == "Rood")
         {
-            Color kleur;
-            if (steen.Kleur == "Rood")
-            {
-                kleur = Color.Red;
-            }
-            else if (steen.Kleur == "Blauw")
-            {
-                kleur = Color.Blue;
-            }
-            else
-            {
-                kleur = Color.White;
-            }
-            Brush brush = new SolidBrush(kleur);
-            g.FillEllipse(brush, (steen.x * ReversiWidth) / AantalVakjes, (steen.y * ReversiHeight) / AantalVakjes, ReversiWidth / AantalVakjes, ReversiHeight / AantalVakjes);
+            kleur = Color.Red;
         }
+        else if (steen.Kleur == "Blauw")
+        {
+            kleur = Color.Blue;
+        }
+        else
+        {
+            kleur = Color.White;
+        }
+        Brush brush = new SolidBrush(kleur);
+        g.FillEllipse(brush, (steen.x * ReversiWidth) / AantalVakjes, (steen.y * ReversiHeight) / AantalVakjes, ReversiWidth / AantalVakjes, ReversiHeight / AantalVakjes);
     }
 }
 

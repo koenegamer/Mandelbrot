@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\koenp\\Downloads\\Demo\\Reversi\\",
+  "WorkspaceRootPath": "C:\\Users\\koenp\\source\\repos\\Mandelbrot\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E5B416A7-1E0C-2BB5-C3EB-F1A884CFC254}|Reversi.csproj|c:\\users\\koenp\\downloads\\demo\\reversi\\reversi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E5B416A7-1E0C-2BB5-C3EB-F1A884CFC254}|Reversi.csproj|c:\\users\\koenp\\source\\repos\\mandelbrot\\reversi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E5B416A7-1E0C-2BB5-C3EB-F1A884CFC254}|Reversi.csproj|solutionrelative:reversi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -36,11 +36,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Reversi.cs",
-              "DocumentMoniker": "C:\\Users\\koenp\\Downloads\\Demo\\Reversi\\Reversi.cs",
+              "DocumentMoniker": "C:\\Users\\koenp\\source\\repos\\Mandelbrot\\Reversi.cs",
               "RelativeDocumentMoniker": "Reversi.cs",
-              "ToolTip": "C:\\Users\\koenp\\Downloads\\Demo\\Reversi\\Reversi.cs",
+              "ToolTip": "C:\\Users\\koenp\\source\\repos\\Mandelbrot\\Reversi.cs",
               "RelativeToolTip": "Reversi.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAIwFkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-01T11:27:09.377Z",
               "EditorCaption": ""

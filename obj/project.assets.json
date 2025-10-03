@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\koenp\\Downloads\\Demo\\Reversi\\Reversi.csproj",
+      "projectUniqueName": "C:\\Users\\koenp\\Source\\Repos\\Mandelbrot\\Reversi.csproj",
       "projectName": "Reversi",
-      "projectPath": "C:\\Users\\koenp\\Downloads\\Demo\\Reversi\\Reversi.csproj",
+      "projectPath": "C:\\Users\\koenp\\Source\\Repos\\Mandelbrot\\Reversi.csproj",
       "packagesPath": "C:\\Users\\koenp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\koenp\\Downloads\\Demo\\Reversi\\obj\\",
+      "outputPath": "C:\\Users\\koenp\\Source\\Repos\\Mandelbrot\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
