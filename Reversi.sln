@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36414.22 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mandelbrot", "Mandelbrot.csproj", "{E922715B-DC5C-D661-B486-CDB673C9E6B9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reversi", "Reversi.csproj", "{E5B416A7-1E0C-2BB5-C3EB-F1A884CFC254}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E922715B-DC5C-D661-B486-CDB673C9E6B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E922715B-DC5C-D661-B486-CDB673C9E6B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E922715B-DC5C-D661-B486-CDB673C9E6B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E922715B-DC5C-D661-B486-CDB673C9E6B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5B416A7-1E0C-2BB5-C3EB-F1A884CFC254}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5B416A7-1E0C-2BB5-C3EB-F1A884CFC254}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5B416A7-1E0C-2BB5-C3EB-F1A884CFC254}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5B416A7-1E0C-2BB5-C3EB-F1A884CFC254}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {1DE9C08E-D197-422B-BB04-FC1F2EBB2AB1}
+		SolutionGuid = {259BC40F-F74C-438F-8CC3-7E91F35CD97E}
 	EndGlobalSection
 EndGlobal

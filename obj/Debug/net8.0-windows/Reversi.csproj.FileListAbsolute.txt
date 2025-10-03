@@ -1,0 +1,15 @@
+C:\Users\koenp\Downloads\Demo\Reversi\obj\Debug\net8.0-windows\Reversi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\koenp\Downloads\Demo\Reversi\obj\Debug\net8.0-windows\Reversi.AssemblyInfoInputs.cache
+C:\Users\koenp\Downloads\Demo\Reversi\obj\Debug\net8.0-windows\Reversi.AssemblyInfo.cs
+C:\Users\koenp\Downloads\Demo\Reversi\obj\Debug\net8.0-windows\Reversi.csproj.CoreCompileInputs.cache
+C:\Users\koenp\Downloads\Demo\Reversi\obj\Debug\net8.0-windows\Reversi.sourcelink.json
+C:\Users\koenp\Downloads\Demo\Reversi\bin\Debug\net8.0-windows\Reversi.exe
+C:\Users\koenp\Downloads\Demo\Reversi\bin\Debug\net8.0-windows\Reversi.deps.json
+C:\Users\koenp\Downloads\Demo\Reversi\bin\Debug\net8.0-windows\Reversi.runtimeconfig.json
+C:\Users\koenp\Downloads\Demo\Reversi\bin\Debug\net8.0-windows\Reversi.dll
+C:\Users\koenp\Downloads\Demo\Reversi\bin\Debug\net8.0-windows\Reversi.pdb
+C:\Users\koenp\Downloads\Demo\Reversi\obj\Debug\net8.0-windows\Reversi.dll
+C:\Users\koenp\Downloads\Demo\Reversi\obj\Debug\net8.0-windows\refint\Reversi.dll
+C:\Users\koenp\Downloads\Demo\Reversi\obj\Debug\net8.0-windows\Reversi.pdb
+C:\Users\koenp\Downloads\Demo\Reversi\obj\Debug\net8.0-windows\Reversi.genruntimeconfig.cache
+C:\Users\koenp\Downloads\Demo\Reversi\obj\Debug\net8.0-windows\ref\Reversi.dll
